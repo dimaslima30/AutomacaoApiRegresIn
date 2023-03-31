@@ -2,7 +2,7 @@
 
 ##Introdução:
 
-Esse projeto busca simular cenários de teste de forma automatizada utilizando JUnit e RestAssured, a partir do endpoint GetUserByiD da API pública Regres.in, disponível em: https://reqres.in. A IDE utilizada para o desenvolvimento do projeto foi o Intelij, e as versões do RestAssured e do JUnit foram, respectivamente, 4.3.0 e 4.13. 
+- Esse projeto busca simular cenários de teste de forma automatizada utilizando JUnit e RestAssured, a partir do endpoint GetUserByiD da API pública Regres.in, disponível em: https://reqres.in. A IDE utilizada para o desenvolvimento do projeto foi o Intelij, e as versões do RestAssured e do JUnit foram, respectivamente, 4.3.0 e 4.13. 
 
 ##Casos e cenários de teste:
 
@@ -23,7 +23,7 @@ Desenvolvi seis cenários de teste em cima do endpoint GetUserById, verificando 
   Status: Passed
   Observações: A resposta para essa requisição poderia indicar a razão do código 404, a exemplo de: "Id declared is not an Integer. no such a thing as "id":dimas"
   
-  -Cenário 3:
+- Cenário 3:
   Utilizar um Id inválido (dimas123) e retornar um código de resposta Not Found(404)
   Descrição: Inserir um id alfanumérico e verificar código de resposta para tal requisição
   Resultado obtido: código de resposta 404
@@ -31,7 +31,7 @@ Desenvolvi seis cenários de teste em cima do endpoint GetUserById, verificando 
   Status: Passed
   Observações: A resposta para essa requisição poderia indicar a razão do código 404, a exemplo de: "Id declared is not an Integer. no such a thing as "id":dimas123"
   
-  -Cenário 4:
+- Cenário 4:
   Utilizar o id (12*) e retornar um código de resposta Not Found(404)
   Descrição: Inserir um id contendo um caractere especial e verificar código de resposta para tal requisição
   Resultado obtido: código de resposta 404
@@ -39,7 +39,7 @@ Desenvolvi seis cenários de teste em cima do endpoint GetUserById, verificando 
   Status: Passed
   Observações: A resposta para essa requisição poderia indicar a razão do código 404, a exemplo de: "Id declared is not an Integer. no such a thing as "id":12*"
   
-  -Cenário 5:
+- Cenário 5:
   Utilizar o id (1) e retornar um código de resposta OK(200)
   Descrição: Inserir um id válido e registrado e verificar código de resposta para tal requisição
   Resultado obtido: código de resposta 200 + schema
@@ -47,7 +47,7 @@ Desenvolvi seis cenários de teste em cima do endpoint GetUserById, verificando 
   Status: Passed
   Observações:
   
-  -Cenário 6:
+- Cenário 6:
   Utilizar o id (13) e retornar um código de resposta Not Found(404)
   Descrição: Inserir um id válido, mas não registrado e verificar código de resposta para tal requisição
   Resultado obtido: código de resposta 404
@@ -56,5 +56,5 @@ Desenvolvi seis cenários de teste em cima do endpoint GetUserById, verificando 
   Observações: A resposta para essa requisição poderia indicar a razão do código 404, a exemplo de: "Id declared is not registered. no such a thing as "id":13"
   
 ##Melhorias:
-Muitos endpoints da api não permitem uma devida manipulação de requisições e respostas, logo, isso dificulta a utilização de outros tipos de teste, como os testes de  autorização e dados. Uma melhoria essencial para os testes de api seria permitir a utilização de parâmetros nos verbos POST, PUT e PATCH. Ademais, para o endpoit GetUserById, a única requisição que retorna uma resposta adequada é quando o retorno é um código 200(retornando o schema), contudo. seria interessante que as respostas para as outras requisições apresentassem mensagens de erro, facilitando assim a compreensão do tipo de erro retornado para sua respectiva requisição.
+- Muitos endpoints da api não permitem uma devida manipulação de requisições e respostas, logo, isso dificulta a utilização de outros tipos de teste, como os testes de  autorização e dados. Uma melhoria essencial para os testes de api seria permitir a utilização de parâmetros nos verbos POST, PUT e PATCH. Ademais, para o endpoit GetUserById, a única requisição que retorna uma resposta adequada é quando o retorno é um código 200(retornando o schema), contudo. seria interessante que as respostas para as outras requisições apresentassem mensagens de erro, facilitando assim a compreensão do tipo de erro retornado para sua respectiva requisição.
   
