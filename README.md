@@ -1,12 +1,12 @@
 # AutomacaoApiRegresIn
 
-##INTRODUÇÃO?
+##Introdução:
 
 Esse projeto busca simular cenários de teste de forma automatizada utilizando JUnit e RestAssured, a partir do endpoint GetUserByiD da API pública Regres.in, disponível em: https://reqres.in. A IDE utilizada para o desenvolvimento do projeto foi o Intelij, e as versões do RestAssured e do JUnit foram, respectivamente, 4.3.0 e 4.13. 
 
 ##Casos e cenários de teste:
 
-Desenvolvi seis cenários de teste em cima do endpoint GetUserById, verificando os códigos de resposta das requisições, seguindo esta ordem:
+Desenvolvi seis cenários de teste em cima do endpoint GetUserById, verificando os códigos de resposta das requisições e o schema retornado, seguindo esta ordem:
 - Cenário 1: 
   Utilizar o id (0) e retornar um código de resposta Not Found(404)
   Descrição: Inserir
@@ -57,6 +57,4 @@ Desenvolvi seis cenários de teste em cima do endpoint GetUserById, verificando 
   
 ##Melhorias:
 Muitos endpoints da api não permitem uma devida manipulação de requisições e respostas, logo, isso dificulta a utilização de outros tipos de teste, como os testes de  autorização e dados. Uma melhoria essencial para os testes de api seria permitir a utilização de parâmetros nos verbos POST, PUT e PATCH. Ademais, para o endpoit GetUserById, a única requisição que retorna uma resposta adequada é quando o retorno é um código 200(retornando o schema), contudo. seria interessante que as respostas para as outras requisições apresentassem mensagens de erro, facilitando assim a compreensão do tipo de erro retornado para sua respectiva requisição.
-  
-  
   
