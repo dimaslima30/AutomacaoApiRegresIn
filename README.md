@@ -56,5 +56,6 @@ Desenvolvi seis cenários de teste em cima do endpoint GetUserById, verificando 
   Observações: A resposta para essa requisição poderia indicar a razão do código 404, a exemplo de: "Id declared is not registered. no such a thing as "id":13"
   
 ##Melhorias:
-- Muitos endpoints da api não permitem uma devida manipulação de requisições e respostas, logo, isso dificulta a utilização de outros tipos de teste, como os testes de  autorização e dados. Uma melhoria essencial para os testes de api seria permitir a utilização de parâmetros nos verbos POST, PUT e PATCH. Ademais, para o endpoit GetUserById, a única requisição que retorna uma resposta adequada é quando o retorno é um código 200(retornando o schema), contudo. seria interessante que as respostas para as outras requisições apresentassem mensagens de erro, facilitando assim a compreensão do tipo de erro retornado para sua respectiva requisição.
+- Muitos endpoints da api não permitem a passagem de parâmetros nas requisições, dificultando a utilização de outros tipos de teste, como os testes de  autorização e dados. Uma melhoria essencial para os testes de api seria permitir a utilização de parâmetros nos verbos POST, PUT e PATCH. 
+- Ademais, para o endpoit GetUserById, a única requisição que retorna uma resposta adequada é quando o retorno é um código 200(retornando o schema), contudo. seria interessante que as respostas para as outras requisições apresentassem mensagens de erro, facilitando assim a compreensão do tipo de erro retornado para sua respectiva requisição.
   
