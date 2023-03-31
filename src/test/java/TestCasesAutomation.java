@@ -30,4 +30,10 @@ public class TestCasesAutomation {
                 .when().get(baseUrl+"/12*")
                 .then().log().all().statusCode(404);
     }
+    @Test
+    public void testApiGetUserByIdPassed(){
+        given().contentType("application/json")
+                .when().get(baseUrl+"/1")
+                .then().assertThat().log().all().statusCode(200);
+    }
 }
