@@ -9,4 +9,11 @@ public class TestCasesAutomation {
                 .when().get(baseUrl+"/0")
                 .then().log().all().statusCode(404);
     }
+    @Test
+    public void testApiGetUserByAlphabeticId() {
+
+        given().contentType("application/json")
+                .when().get(baseUrl+"/dimas")
+                .then().log().all().statusCode(404);
+    }
 }
