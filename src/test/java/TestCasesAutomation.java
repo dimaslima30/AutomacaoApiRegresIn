@@ -40,4 +40,10 @@ public class TestCasesAutomation {
                 .when().get(baseUrl+"/1")
                 .then().assertThat().body(matchesJsonSchema(new File("src/test/java/resources/Schemas"))).log().all().statusCode(200);
     }
+    @Test
+    public void testApiGetUserByIdNotCreated(){
+        given().contentType("application/json")
+                .when().get(baseUrl+"/13")
+                .then().log().all().statusCode(404);
+    }
 }
