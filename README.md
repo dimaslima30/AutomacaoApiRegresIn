@@ -2,7 +2,7 @@
 
 1 - Introdução:
 
-- Esse projeto busca simular cenários de teste de forma automatizada utilizando JUnit e RestAssured, a partir do endpoint GetUserByiD da API pública Regres.in, disponível em: https://reqres.in. A IDE utilizada para o desenvolvimento do projeto foi o Intelij, e as versões do RestAssured e do JUnit foram, respectivamente, 4.3.0 e 4.13. 
+Esse projeto busca simular cenários de teste de forma automatizada utilizando JUnit e RestAssured, a partir do endpoint GetUserByiD da API pública Regres.in, disponível em: https://reqres.in. A IDE utilizada para o desenvolvimento do projeto foi o Intelij, e as versões do RestAssured e do JUnit foram, respectivamente, 4.3.0 e 4.13. 
 
 2 - Casos e cenários de teste:
 
