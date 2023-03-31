@@ -16,4 +16,11 @@ public class TestCasesAutomation {
                 .when().get(baseUrl+"/dimas")
                 .then().log().all().statusCode(404);
     }
+    @Test
+    public void testApiGetUserByAlphanumericId(){
+
+        given().contentType("application/json")
+                .when().get(baseUrl+"/dimas123")
+                .then().log().all().statusCode(404);
+    }
 }
