@@ -1,6 +1,10 @@
 import static io.restassured.RestAssured.*;
 import org.junit.Test;
 
+
+import java.io.File;
+
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema;
 public class TestCasesAutomation {
     String baseUrl = "https://reqres.in/api/users";
     @Test
@@ -34,6 +38,6 @@ public class TestCasesAutomation {
     public void testApiGetUserByIdPassed(){
         given().contentType("application/json")
                 .when().get(baseUrl+"/1")
-                .then().assertThat().log().all().statusCode(200);
+                .then().assertThat().body(matchesJsonSchema(new File("src/test/java/resources/Schemas"))).log().all().statusCode(200);
     }
 }
