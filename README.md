@@ -9,7 +9,7 @@ Esse projeto busca simular cenários de teste de forma automatizada utilizando J
 Desenvolvi seis cenários de teste em cima do endpoint GetUserById, verificando os códigos de resposta das requisições e o schema retornado, seguindo esta ordem:
 - Cenário 1: 
   <br/>Utilizar o id (0) e retornar um código de resposta Not Found(404)
-  <br/>Descrição: Inserir
+  <br/>Descrição: Inserir um id inválido e verificar o código de resposta para tal requisição
   <br/>Resultado obtido: código de resposta 404
   <br/>Resultado esperado: código de resposta 404 + mensagem de erro
   <br/>Status: Passed
