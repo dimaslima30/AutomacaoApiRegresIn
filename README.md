@@ -8,52 +8,52 @@ Esse projeto busca simular cenários de teste de forma automatizada utilizando J
 
 Desenvolvi seis cenários de teste em cima do endpoint GetUserById, verificando os códigos de resposta das requisições e o schema retornado, seguindo esta ordem:
 - Cenário 1: 
-  -Utilizar o id (0) e retornar um código de resposta Not Found(404)
-  -Descrição: Inserir
-  -Resultado obtido: código de resposta 404
-  -Resultado esperado: código de resposta 404 + mensagem de erro
-  -Status: Passed
-  -Observações: A resposta para essa requisição poderia indicar a razão do código 404, a exemplo de: "Id not registered. no such a thing as "id":0"
+  <br/>Utilizar o id (0) e retornar um código de resposta Not Found(404)
+  <br/>Descrição: Inserir
+  <br/>Resultado obtido: código de resposta 404
+  <br/>Resultado esperado: código de resposta 404 + mensagem de erro
+  <br/>Status: Passed
+  <br/>Observações: A resposta para essa requisição poderia indicar a razão do código 404, a exemplo de: "Id not registered. no such a thing as "id":0"
   
 - Cenário 2:
-  -Utilizar o id (dimas) e retornar um código de resposta Not Found(404)
-  -Descrição: Inserir um id alfabético e verificar código de resposta para tal requisição
-  -Resultado obtido: código de resposta 404
-  -Resultado esperado: código de resposta 404 + mensagem de erro
-  -Status: Passed
-  -Observações: A resposta para essa requisição poderia indicar a razão do código 404, a exemplo de: "Id declared is not an Integer. no such a thing as "id":dimas"
+  <br/>Utilizar o id (dimas) e retornar um código de resposta Not Found(404)
+  <br/>Descrição: Inserir um id alfabético e verificar código de resposta para tal requisição
+  <br/>Resultado obtido: código de resposta 404
+  <br/>Resultado esperado: código de resposta 404 + mensagem de erro
+  <br/>Status: Passed
+  <br/>Observações: A resposta para essa requisição poderia indicar a razão do código 404, a exemplo de: "Id declared is not an Integer. no such a thing as "id":dimas"
   
 - Cenário 3:
-  -Utilizar um Id inválido (dimas123) e retornar um código de resposta Not Found(404)
-  -Descrição: Inserir um id alfanumérico e verificar código de resposta para tal requisição
-  -Resultado obtido: código de resposta 404
-  -Resultado esperado: código de resposta 404 + mensagem de erro
-  -Status: Passed
-  -Observações: A resposta para essa requisição poderia indicar a razão do código 404, a exemplo de: "Id declared is not an Integer. no such a thing as "id":dimas123"
+  <br/>Utilizar um Id inválido (dimas123) e retornar um código de resposta Not Found(404)
+  <br/>Descrição: Inserir um id alfanumérico e verificar código de resposta para tal requisição
+  <br/>Resultado obtido: código de resposta 404
+  <br/>Resultado esperado: código de resposta 404 + mensagem de erro
+  <br/>Status: Passed
+  <br/>Observações: A resposta para essa requisição poderia indicar a razão do código 404, a exemplo de: "Id declared is not an Integer. no such a thing as   "id":dimas123"
   
 - Cenário 4:
-  -Utilizar o id (12*) e retornar um código de resposta Not Found(404)
-  -Descrição: Inserir um id contendo um caractere especial e verificar código de resposta para tal requisição
-  -Resultado obtido: código de resposta 404
-  -Resultado esperado: código de resposta 404 + mensagem de erro
-  -Status: Passed
-  -Observações: A resposta para essa requisição poderia indicar a razão do código 404, a exemplo de: "Id declared is not an Integer. no such a thing as "id":12*"
+  <br/>Utilizar o id (12*) e retornar um código de resposta Not Found(404)
+  <br/>Descrição: Inserir um id contendo um caractere especial e verificar código de resposta para tal requisição
+  <br/>Resultado obtido: código de resposta 404
+  <br/>Resultado esperado: código de resposta 404 + mensagem de erro
+  <br/>Status: Passed
+  <br/>Observações: A resposta para essa requisição poderia indicar a razão do código 404, a exemplo de: "Id declared is not an Integer. no such a thing as "id":12*"
   
 - Cenário 5:
-  -Utilizar o id (1) e retornar um código de resposta OK(200)
-  -Descrição: Inserir um id válido e registrado e verificar código de resposta para tal requisição
-  -Resultado obtido: código de resposta 200 + schema
-  -Resultado esperado: código de resposta 200 + schema
-  -Status: Passed
-  -Observações:
+  <br/>Utilizar o id (1) e retornar um código de resposta OK(200)
+  <br/>Descrição: Inserir um id válido e registrado e verificar código de resposta para tal requisição
+  <br/>Resultado obtido: código de resposta 200 + schema
+  <br/>Resultado esperado: código de resposta 200 + schema
+  <br/>Status: Passed
+  <br/>Observações:
   
 - Cenário 6:
-  -Utilizar o id (13) e retornar um código de resposta Not Found(404)
-  -Descrição: Inserir um id válido, mas não registrado e verificar código de resposta para tal requisição
-  -Resultado obtido: código de resposta 404
-  -Resultado esperado: código de resposta 404 + mensagem de erro
-  -Status: Passed
-  -Observações: A resposta para essa requisição poderia indicar a razão do código 404, a exemplo de: "Id declared is not registered. no such a thing as "id":13"
+  <br/>Utilizar o id (13) e retornar um código de resposta Not Found(404)
+  <br/>Descrição: Inserir um id válido, mas não registrado e verificar código de resposta para tal requisição
+  <br/>Resultado obtido: código de resposta 404
+  <br/>Resultado esperado: código de resposta 404 + mensagem de erro
+  <br/>Status: Passed
+  <br/>Observações: A resposta para essa requisição poderia indicar a razão do código 404, a exemplo de: "Id declared is not registered. no such a thing as "id":13"
   
 3 - Melhorias:
 - Muitos endpoints da api não permitem a passagem de parâmetros nas requisições, dificultando a utilização de outros tipos de teste, como os testes de  autorização e dados. Uma melhoria essencial para os testes de api seria permitir a utilização de parâmetros nos verbos POST, PUT e PATCH. 
